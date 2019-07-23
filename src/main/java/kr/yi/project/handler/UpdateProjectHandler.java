@@ -44,9 +44,9 @@ public class UpdateProjectHandler implements ConmmandHandler {
 			SimpleDateFormat d1 = new SimpleDateFormat("yyyy/mm/dd");
 			Date date1 = d1.parse(startDate);
 			
-			String endDate = req.getParameter("startDate");
+			String endDate = req.getParameter("endDate");
 			SimpleDateFormat d2 = new SimpleDateFormat("yyyy/mm/dd");
-			Date date2 = d2.parse(startDate);
+			Date date2 = d2.parse(endDate);
 			
 			SqlSession sqlSession = null;
 			try {

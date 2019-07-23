@@ -25,12 +25,12 @@ public class InsertProjectHandler implements ConmmandHandler {
 			String content = req.getParameter("content");
 			
 			String startDate = req.getParameter("startDate");
-			SimpleDateFormat d1 = new SimpleDateFormat("MM/dd/yyyy");
+			SimpleDateFormat d1 = new SimpleDateFormat("yyyy/MM/dd");
 			Date date1 = d1.parse(startDate);
 			
-			String endtDate = req.getParameter("endDate");
-			SimpleDateFormat d2 = new SimpleDateFormat("MM/dd/yyyy");
-			Date date2 = d2.parse(startDate);
+			String endDate = req.getParameter("endDate");
+			SimpleDateFormat d2 = new SimpleDateFormat("yyyy/MM/dd");
+			Date date2 = d2.parse(endDate);
 			
 			String progress = req.getParameter("sel");
 
